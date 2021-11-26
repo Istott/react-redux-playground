@@ -4,6 +4,7 @@ import {
   decrement,
   increment,
   incrementByAmount,
+  resetAmount,
   incrementAsync,
   incrementIfOdd,
   selectCount,
@@ -62,6 +63,13 @@ export function Counter() {
           Add If Odd
         </button>
       </div>
+      <button
+          className={styles.button}
+          aria-label="Reset value"
+          onClick={() => dispatch(resetAmount())}
+        >
+          Reset Amount
+        </button>
     </div>
   );
 }
